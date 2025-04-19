@@ -49,33 +49,33 @@ This project automates browser-based crypto mining using [Playwright](https://pl
   **You will be giving the BOT full access to your gmail, so using alt gmail ID is highly preffered**
   
   1. **Create a Google Cloud Project**
-    - Go to: https://console.cloud.google.com/
-    
-    - Click "Create Project" → give it a name (like “Gmail Login BOT”).
+      - Go to: https://console.cloud.google.com/
+      
+      - Click "Create Project" → give it a name (like “Gmail Login BOT”).
     
   2. **Enable Gmail API**
-    - After project is created, go to "APIs & Services" > Library.
-    
-    - Search for "Gmail API" → Click Enable.
+      - After project is created, go to "APIs & Services" > Library.
+      
+      - Search for "Gmail API" → Click Enable.
 
   3. **Create OAuth Credentials**
-    - Go to APIs & Services > Credentials.
-    
-    - Click "Create Credentials" → OAuth client ID
-    
-    - Choose Desktop App.
-    
-    - Download the credentials.json file.
-    
-    - Rename it credentials.json and save it in the same directory
+      - Go to APIs & Services > Credentials.
+      
+      - Click "Create Credentials" → OAuth client ID
+      
+      - Choose Desktop App.
+      
+      - Download the credentials.json file.
+      
+      - Rename it credentials.json and save it in the same directory
 
 
 4. **Add Your Monero Wallet Address**
-  - Use any wallet supported by nanopool.org
-    Open `command.txt` and edit the field (Your_wallet_address) with you own wallet address, there are 3 such fields
+      - Use any wallet supported by nanopool.org
+        Open `command.txt` and edit the field (Your_wallet_address) with you own wallet address, there are 3 such fields
 
 5. **Add your email**
-  - Head to main.py and edit ("your_email") with the email you used for creating the cloud project
+      - Head to main.py and edit ("your_email") with the email you used for creating the cloud project
 
 ## 🚀 Usage
 
@@ -85,29 +85,29 @@ Run the script:
 python gmailcode.py
 ```
 The script will:
-- Open up a google auth window
-- Select the account you used to create credentials.json
-- You may get an error of insufficent access, or the dev has not allowed you to access it
-- To fix this, Go to console.cloud.google.com
-- Open your project
-- Go to APIS
-- Then Go to OAuth consent Screen
-- Click on Audience
-- Under Test Users, Click on Add users
-- Fill the email you used for this project
-- Save
-- Now rerun `python gmailcode.py`
-- If Sucessfull, it should save a file named `token.json`
+  - Open up a google auth window
+  - Select the account you used to create credentials.json
+  - You may get an error of insufficent access, or the dev has not allowed you to access it
+  - To fix this, Go to console.cloud.google.com
+  - Open your project
+  - Go to APIS
+  - Then Go to OAuth consent Screen
+  - Click on Audience
+  - Under Test Users, Click on Add users
+  - Fill the email you used for this project
+  - Save
+  - Now rerun `python gmailcode.py`
+  - If Sucessfull, it should save a file named `token.json`
 
-- Now Run
-  ```bash
-  python main.py
-  ```
-- This will start the program and you should see chromium tab pop up and simulating the login process for you
+  - Now Run
+    ```bash
+    python main.py
+    ```
+  - This will start the program and you should see chromium tab pop up and simulating the login process for you
 
 **OPTIONS**
-- You can edit the num_tabs field if you want more tabs mining ( Do not exceed more than 90% ram consumption, as it may cause forceful inactivity)
-- To check mining progress, head to https://nanopool.org and enter your wallet address in the search field
+  - You can edit the num_tabs field if you want more tabs mining ( Do not exceed more than 90% ram consumption, as it may cause forceful inactivity)
+  - To check mining progress, head to https://nanopool.org and enter your wallet address in the search field
 
   20 tabs being run
   ![image](https://github.com/user-attachments/assets/7c697625-3813-4759-a4d7-9e380e3ca116)
