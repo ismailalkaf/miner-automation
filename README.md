@@ -4,6 +4,7 @@
 This project is provided **for educational purposes only**. The developer is **not responsible** for any misuse, consequences, damage, or violations resulting from the use of this software. **Use at your own risk.**
 
 ---
+This project uses XMRIG CC by [Bendr0id](https://github.com/Bendr0id/xmrigCC)
 
 # 💻 Browser Miner Automation with Playwright
 
@@ -17,7 +18,7 @@ This project automates browser-based crypto mining using [Playwright](https://pl
 - 🔄 Command injection into terminal through the web interface
 - 🧼 Email cleanup to avoid inbox clutter
 - 💵 You Get approx 700-800 Hashrate on every TAB
-- TO ADD - More advance detections for inactivity, Better config optimization, only aim for high hashrate 
+- TO DO - More advance detections for inactivity, Better config optimization, aim for higher hashrate 
 
 ## 🛠 Requirements
 - Python 3.10+
@@ -33,12 +34,13 @@ This project automates browser-based crypto mining using [Playwright](https://pl
 1. **Clone the Repository**
   ```bash
   git clone https://github.com/AryanSLAYERRR/miner-automation.git
-  cd browser-miner-automation
+  cd miner-automation
   ```
 
 2. **Install Python Dependencies**
   ```bash
   pip install -r requirements.txt
+  playwright install
   ```
 
 3. **Set Up Gmail API**
