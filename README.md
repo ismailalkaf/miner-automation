@@ -49,25 +49,25 @@ This project automates browser-based crypto mining using [Playwright](https://pl
   **You will be giving the BOT full access to your gmail, so using alt gmail ID is highly preffered**
   
   1. **Create a Google Cloud Project**
-  - Go to: https://console.cloud.google.com/
-  
-  - Click "Create Project" → give it a name (like “Gmail Login BOT”).
-  
+    - Go to: https://console.cloud.google.com/
+    
+    - Click "Create Project" → give it a name (like “Gmail Login BOT”).
+    
   2. **Enable Gmail API**
-  - After project is created, go to "APIs & Services" > Library.
-  
-  - Search for "Gmail API" → Click Enable.
+    - After project is created, go to "APIs & Services" > Library.
+    
+    - Search for "Gmail API" → Click Enable.
 
   3. **Create OAuth Credentials**
-  - Go to APIs & Services > Credentials.
-  
-  - Click "Create Credentials" → OAuth client ID
-  
-  - Choose Desktop App.
-  
-  - Download the credentials.json file.
-  
-  - Rename it credentials.json and save it in the same directory
+    - Go to APIs & Services > Credentials.
+    
+    - Click "Create Credentials" → OAuth client ID
+    
+    - Choose Desktop App.
+    
+    - Download the credentials.json file.
+    
+    - Rename it credentials.json and save it in the same directory
 
 
 4. **Add Your Monero Wallet Address**
