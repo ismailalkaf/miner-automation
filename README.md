@@ -71,7 +71,7 @@ This project automates browser-based crypto mining using [Playwright](https://pl
 
 
 4. **Add Your Monero Wallet Address**
-      - Use any wallet supported by nanopool.org
+      - Use any wallet supported by nanopool.org,
         Open `command.txt` and edit the field (Your_wallet_address) with you own wallet address, there are 3 such fields
 
 5. **Add your email**
