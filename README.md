@@ -20,20 +20,19 @@ This project automates browser-based crypto mining using [Playwright](https://pl
 - TO ADD - More advance detections for inactivity, Better config optimization, only aim for high hashrate 
 
 ## 🛠 Requirements
-- `pip install -r requirements.txt`
 - Python 3.10+
-- Playwright (`pip install playwright`)
+- Playwright 
 - Gmail API credentials (`credentials.json`)
 - Google API packages:
   ```bash
   pip install --upgrade google-api-python-client google-auth-httplib2 google-auth-oauthlib
-- Install playwright browser binaries (`playwright install`)
+- Install playwright browser binaries
   
 ## 📁 Setup
 
 1. **Clone the Repository**
   ```bash
-  git clone https://github.com/yourusername/browser-miner-automation.git
+  git clone https://github.com/AryanSLAYERRR/miner-automation.git
   cd browser-miner-automation
   ```
 
