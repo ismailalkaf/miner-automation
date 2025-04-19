@@ -11,8 +11,9 @@ from datetime import datetime
 
 num_tabs = 20 #mining tabs number
 
+email_address = "your_email"
+
 SCOPES = ['https://mail.google.com/']
-email_address = "imineformaster@gmail.com"
 dirnav = "cd /home/project"
 with open("command.txt", "r") as f:
     command_to_paste = f.read().strip()
@@ -28,7 +29,7 @@ logging.basicConfig(
 def get_gmail_service():
     creds = None
     if os.path.exists('token.json'):
-        creds = Credentials.from_authorized_user_file('token.json', SCOPES)
+        creds = Credentials.from_authorized_user_file('token.json', SCOPES) #checks if token.json already exists
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
@@ -40,7 +41,7 @@ def get_gmail_service():
             token.write(creds.to_json())
     return build('gmail', 'v1', credentials=creds)
 
-def keep_tab_alive(page):
+def keep_tab_alive(page): #keeps the site alive, avoiding timeout for running long sessions
     page.evaluate("""
         if (!window.keepAliveInterval) {
             window.keepAliveInterval = setInterval(() => {
@@ -58,10 +59,10 @@ def keep_tab_alive(page):
     logging.info("✅ Safe JS-based keep-alive injected (no T key, no interference).")
 
 
-def open_and_mine(page):
+def open_and_mine(page): # simulates the miner setup 
     # Wait for chat input
     page.wait_for_selector("textarea", timeout=15000)
-    page.fill("textarea", "Just say 1 word nothing else")
+    page.fill("textarea", "Just say 1 word nothing else") # preserves tokens by limiting response
     page.keyboard.press("Enter")
     #--------------------------------------
     page.locator('button:has(svg.lucide.lucide-chevrons-left)')
@@ -94,7 +95,7 @@ def open_and_mine(page):
     
     keep_tab_alive(page)
 
-def duplicate_and_mine(page):
+def duplicate_and_mine(page): # for other tabs 
     
     page.locator('button:has(svg.lucide.lucide-chevrons-left)')
     page.click('button:has(svg.lucide.lucide-chevrons-left)')
@@ -116,14 +117,14 @@ def duplicate_and_mine(page):
 
     keep_tab_alive(page)
        
-def automate_mining():
+def automate_mining(): # functions that handels logging in and calling the mining function
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False)
         context = browser.new_context()
         page = context.new_page()
 
         service = get_gmail_service()
-        clear_login_emails(service) #deleting emails
+        clear_login_emails(service) #deleting emails of previous one-time codes
 
         page.goto("https://same.new/login")
         time.sleep(0.5)
