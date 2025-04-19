@@ -9,7 +9,7 @@ import logging
 from datetime import datetime
 
 
-num_tabs = 20 #mining tabs number
+num_tabs = 5 #mining tabs number
 
 email_address = "your_email"
 
