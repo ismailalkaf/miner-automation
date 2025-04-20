@@ -6,7 +6,9 @@ This project is provided **for educational purposes only**. The developer is **n
 ---
 This project uses XMRIG CC by [Bendr0id](https://github.com/Bendr0id/xmrigCC)
 
-<p style="color:red;"><strong>IMPORTANT:</strong>For Now the code only supports MONERO mining, if this gets attention il add other CPU intensive options for mining. OR you can edit the command.txt file yourself if you know what you are doing.</p>
+# ‼️‼️IMPORTANT:
+For Now the code only supports MONERO mining, if this gets attention il add other CPU intensive options for mining. OR you can edit the command.txt file yourself if you know what you are doing.
+
 
 # 💻 Browser Miner Automation with Playwright
 
