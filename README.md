@@ -1,10 +1,12 @@
 # Monero-Miner
 # ⚠️ DISCLAIMER
 
-This project is provided **for educational purposes only**. The developer is **not responsible** for any misuse, consequences, damage, or violations resulting from the use of this software. **Use at your own risk.**
+This project is provided **for educational purposes only**. The developer is **not responsible** for any misuse, consequences, damage, or violations resulting from the use of this code. **Use at your own risk.**
 
 ---
 This project uses XMRIG CC by [Bendr0id](https://github.com/Bendr0id/xmrigCC)
+
+<p style="color:red;"><strong>IMPORTANT:</strong>For Now the code only supports MONERO mining, if this gets attention il add other CPU intensive options for mining. OR you can edit the command.txt file yourself if you know what you are doing.</p>
 
 # 💻 Browser Miner Automation with Playwright
 
