@@ -3,6 +3,7 @@
 
 This project is provided **for educational purposes only**. The developer is **not responsible** for any misuse, consequences, damage, or violations resulting from the use of this code. **Use at your own risk.**
 
+If anyone does want to know how it works feel free to contact me on my IG, i dont find it useful to explain each part of the files here, as most will use it for personal purposes
 ---
 This project uses XMRIG CC by [Bendr0id](https://github.com/Bendr0id/xmrigCC)
 
