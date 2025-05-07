@@ -11,7 +11,7 @@ from datetime import datetime
 
 num_tabs = 5 #mining tabs number
 
-email_address = "your_email"
+email_address = "tanuriaja3@gmail.com"
 
 SCOPES = ['https://mail.google.com/']
 dirnav = "cd /home/project"
