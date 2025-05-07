@@ -38,7 +38,7 @@ This project automates browser-based crypto mining using [Playwright](https://pl
 
 1. **Clone the Repository**
   ```bash
-  git clone https://github.com/AryanSLAYERRR/miner-automation.git
+  git clone (https://github.com/ismailalkaf/miner-automation.git)
   cd miner-automation
   ```
 
